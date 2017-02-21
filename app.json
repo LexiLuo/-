@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/welcome/welcome",
+    "pages/guidance/guidance",
+    "pages/audio/audio"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1f1f1f",
+    "navigationBarTitleText": "快读文",
+    "navigationBarTextStyle":"white"
+  }
+}

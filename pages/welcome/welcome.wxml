@@ -1,0 +1,43 @@
+<!--welcome.wxml-->
+<view style="height:100%">
+        <view class="title_bg view_bg" style="height:8%;">
+                   <image class="app_img" mode="{{mode}}" src="{{src1}}">
+            </image>
+            <contact-button class="app_icon">     </contact-button> 
+            <button class="app_hint">请粘贴文章链接点击制作生成</button>
+        </view>
+                <scroll-view style="background-color: #eeeeee;height:55%;margin-top:2%;" scroll-y="true">
+<audio class="audio" poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{videosrc}}" id="myAudio" controls loop bindtouchstart="touchstart" bindtouchend="touchend" bindtap="deleteOrDetail"></audio>
+<!--<audio class="audio" poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{videosrc}}" id="myAudio" controls loop></audio>
+<audio class="audio" poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{videosrc}}" id="myAudio" controls loop></audio>
+<audio class="audio" poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{videosrc}}" id="myAudio" controls loop></audio>
+<audio class="audio" poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{videosrc}}" id="myAudio" controls loop></audio>-->
+              </scroll-view>
+        <view class="view_bg link_bg"style="height:6%;margin-top:3%; " >
+        <input class="link_input" placeholder="粘贴文章链接" placeholder-style="margin-left:10rpx;border-radius:10rpx;"/>
+        <button class="make_button" bindtap="makeVoice">制作</button>
+        </view>
+        <view class="voice_bg" style="margin-top:3%;height:25%">
+        <swiper class="voice_sw" indicator-dots="true"> 
+        <swiper-item > 
+            <image class="voice_im" mode="{{mode}}" src="{{src}}">
+            </image>
+                    <image class="voice_im" mode="{{mode}}" src="{{src}}">
+            </image> 
+                    <image class="voice_im" mode="{{mode}}" src="{{src}}">
+            </image>
+         </swiper-item>
+              <swiper-item > 
+            <image class="voice_im" mode="{{mode}}" src="{{src}}">
+            </image>
+                    <image class="voice_im" mode="{{mode}}" src="{{src}}">
+            </image> 
+                    <image class="voice_im" mode="{{mode}}" src="{{src}}">
+            </image>
+         </swiper-item>
+        </swiper>
+        <view class="hint_bg">
+        <label class="hint_lb" bindtap="linkHint" >如何获取文章链接</label>
+        </view> 
+ </view>
+ </view>

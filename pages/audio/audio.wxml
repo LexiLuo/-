@@ -1,0 +1,22 @@
+<!--pages/audio/audio.wxml-->
+<view class="bg_view" style="height:100%;width:100%">
+    <view class="title_bg">
+    <text class="title_name">快读文</text>
+    <image src="{{src}}" mode="{{mode}}" class="bg_img"></image> 
+    </view>
+    <view style="margin-top:6%">
+    <slider style="width:80%; margin-left:10%" max="200" min="0" show-value/>
+    </view>
+    <view class="name_bg">
+    <text class="audio_name"> 时间的朋友</text>
+    </view>
+    <view class="play_bg" style="margin-top:10%">
+        <image mode="{{mode}}" src="../../resources/上一首.png" class="last_img" bindtap="play_audio">　
+     </image>
+    <image mode="{{mode}}" src="../../resources/播放.png" class="play_img" bindtap="play_audio">
+    </image>
+        <image mode="{{mode}}" src="../../resources/下一首.png" class="next_img" bindtap="play_audio">
+    </image>
+    </view>
+    <button class="back_button">回到微信继续收听</button>
+</view>
